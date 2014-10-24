@@ -63,5 +63,5 @@ rm(activities)
 colnames(tidy)[89] <- "Activity"
 # Remove column with activity numbers
 tidy[,1] <- NULL
-write.table(tidy, "tidy.txt", sep="\t")
+write.table(tidy, "tidy.txt", sep="\t", row.name=FALSE)
 setwd("..")
